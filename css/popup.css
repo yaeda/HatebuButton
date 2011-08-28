@@ -1,0 +1,41 @@
+html, body {
+    width: 375px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+div.img_wrap {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    padding: 0;
+}
+div.pushable {
+    -webkit-box-shadow: 1px 1px 3px gray;
+}
+div.pushable:hover {
+    top: 1px;
+    -webkit-box-shadow: 0px 0px 0px gray;
+}
+img {
+    max-width: 30px;
+    max-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+p.comment {
+    position: fixed;
+    padding: 0.5em;
+    margin: 0;
+    top: 0px;
+    border-radius: 5px;
+    left: 0px;
+    background: black;
+    opacity: 0.8;
+    color: white;
+    text-align: left;
+    font-size: 1em;
+}

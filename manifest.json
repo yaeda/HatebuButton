@@ -1,0 +1,25 @@
+{
+    "name": "はじめてのChrome拡張勉強会ハンズオン用拡張 はじめの一歩 改良版",
+    "version": "0.5",
+    "description": "はてぶ数、はてぶコメントの表示、はてぶボタンの追加",
+    "icons" : {
+	"16" : "icon/hatena16x16.png",
+	"48" : "icon/hatena48x48.png",
+	"128" : "icon/hatena128x128.png"
+    },
+    "browser_action": {
+	"popup": "popup.html",
+	"default_icon": "icon/hatena16x16.png"
+    },
+    "content_scripts": [
+	{
+	    "matches": ["http://*/*"],
+	    "js": ["js/jquery-1.6.2.min.js", "js/contentscript.js"]
+	}
+    ],
+    "permissions": [
+	"http://b.hatena.ne.jp/entry/*",
+	"tabs"
+    ],
+    "background_page": "background.html"
+}
